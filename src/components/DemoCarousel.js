@@ -27,13 +27,12 @@ class DemoCarousel extends React.Component {
         console.log(this.props);
             return (
                 <Carousel className='page-carousel' style={styleC}
-                          axis={"horizontal"}
                           showArrows={true}
                           showThumbs={true}
                           showIndicators={false}
-                          width={'840px'}
                           autoPlay={true}
                           infiniteLoop={true}
+                          width={'840px'}
                           dynamicHeight={true}
                          /* onChange={()=> {
                               this.setState({selectedSection:this.props.selectedSection})
