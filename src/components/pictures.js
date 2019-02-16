@@ -1,7 +1,8 @@
 const numberParis = 81;
-const numberBuda = 28;
-const numberSpain = 124;
-const numberGreece = 55;
+const numberBuda = 46;
+const numberSpain = 163;
+const numberGreece = 54;
+const numberDunedin=16;
 const pictures =  {
     paris: {
         title: 'France',
@@ -37,5 +38,8 @@ for (let i = 0; i < numberSpain; i++) {
 }
 for (let i = 0; i < numberGreece; i++) {
     pictures.greece.pictures.push("assets/greece/" + (i+1).toString()+ ".jpg");
+}
+for (let i = 0; i < numberDunedin; i++) {
+    pictures.dunedin.pictures.push("assets/dunedin/" + (i+1).toString()+ ".jpg");
 }
 export default pictures;

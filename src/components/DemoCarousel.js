@@ -32,8 +32,10 @@ class DemoCarousel extends React.Component {
                           showIndicators={false}
                           autoPlay={true}
                           infiniteLoop={true}
-                          width={'840px'}
                           dynamicHeight={true}
+                          interval={5000}
+                          transitionTime={500}
+                          useKeyboardArrows={true}
                          /* onChange={()=> {
                               this.setState({selectedSection:this.props.selectedSection})
                           }}*/

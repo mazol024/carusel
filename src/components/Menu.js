@@ -14,15 +14,23 @@ var divStyle = {
     padding: '0px',
     overflow: 'overlap',
     top: '0px'
-}
+};
+var pmenu = {
+    backgroundColor: 'lighsilver'
+};
+var amenu = {
+    color: 'red'
+};
 
 class Menu extends PureComponent {
 
     getMenuItems = () => {
         const {selectedSection, selectSection} = this.props;
         this.setState({selectedSection:this.props.selectedSection});
+
         return _.toPairs(pictures).map(([urlSufix, pictureDetails]) =>
-            <a className={' item ' + (selectedSection === 'urlSufix' ? ' active selected ' :'')}
+            <a className={' item imenu' + (selectedSection === urlSufix ? ' active selected ' :'')}
+               style={(selectedSection == urlSufix? amenu :pmenu)}
                 key={urlSufix}
                 title={pictureDetails.title}
                 onClick={(e)=>{selectSection(urlSufix);}}>{pictureDetails.title}</a>
